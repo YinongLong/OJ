@@ -68,9 +68,9 @@ public class ThreeSum {
 							found = true;
 							break;
 						}else if(numbers.get(mid) > sum_temp * -1){
-							end -= 1;
+							end = mid - 1;
 						}else{
-							start += 1;
+							start = mid + 1;
 						}
 					}
 				}
